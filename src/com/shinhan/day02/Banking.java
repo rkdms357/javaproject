@@ -29,23 +29,25 @@ public class Banking {
 
         while (!isStop) {
             menuDisplay();
-            int selectJob = sc.nextInt();
+            String selectJob = sc.nextLine();
             switch (selectJob) {
-                case 1:
-                    System.out.print("예금액>");
-                    long amount = sc.nextLong();
+                case "1" -> {
+                    System.out.print("예금액>>");
+                    int amount = sc.nextInt(); //예금액>>10000(enter)이면 enter를 읽지 않음
+                    sc.nextLine(); //enter를 읽어서 버림
                     balance += amount;
-                    break;
-                case 2:
-                    System.out.print("출금액>");
-                    long amount2 = sc.nextLong();
-                    balance -= amount2;
-                    break;
-                case 3:
-                    System.out.printf("잔고>%d\n", balance);
-                    break;
-                case 4:
+                }
+                case "2" -> {
+                    System.out.print("출금액>>");
+                    String amount = sc.nextLine();
+                    balance -= Integer.parseInt(amount);
+                }
+                case "3" -> {
+                    System.out.printf("잔고>>%d\n", balance);
+                }
+                case "4" -> {
                     isStop = true;
+                }
             }
         }
         sc.close();
