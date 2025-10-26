@@ -8,12 +8,15 @@ public class LAB1_Q3_SumTest {
         System.out.print("숫자를 입력하세요. : ");
         int num = sc.nextInt();
         int result = 0;
-        if (num % 2 == 0) {
-            for (int i = 0; i <= num; i += 2) {
+        //a. 입력 받은 숫자가 홀수인 경우
+        if (num % 2 != 0) {
+            for (int i = 1; i <= num; i += 2) {
                 result += i;
             }
-        } else {
-            for (int i = 1; i <= num; i += 2) {
+        }
+        //b. 입력 받은 숫자가 짝수인 경우
+        else {
+            for (int i = 0; i <= num; i += 2) {
                 result += i;
             }
         }
