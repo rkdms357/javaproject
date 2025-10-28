@@ -5,9 +5,13 @@ package com.shinhan.day04;
 //public : 모든 패키지에서 접근 가능
 public class Car {
 
-    //1. field
+    //1. field(속성, 데이터저장), new할때 자동초기화
+    //non-static 필드는 반드시 객체 생성후 접근 가능
     String model;
     int price;
+
+    //static이 있으면 class변수
+    static String company = "현대";
 
     //2. constructor method (생성자)...초기화 목적. 클래스명과 같아야함
     Car() {
@@ -21,6 +25,13 @@ public class Car {
 
     void method2() {
         System.out.println("일반 method2...");
+    }
+
+    void carInfoPrint() {
+        System.out.println("--------------------------");
+        System.out.println("차의 모델은 :" + model);
+        System.out.println("차의 가격은 :" + price);
+        System.out.println("차의 회사는 :" + company);
     }
 
     //4. instance block
