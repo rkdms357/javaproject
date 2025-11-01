@@ -1,7 +1,23 @@
-package com.shinhan.day02;
+package com.shinhan.day02.lab4_1;
 
-public class LAB1_Q4_StringUtil {
+public class Q4_StringUtil {
 
+    public static void main(String[] args) {
+        hokeyGraphics('*', 3, true);
+        hokeyGraphics('&', 3, false);
+    }
+
+    private static void hokeyGraphics(char cell, int size, boolean isRect) {
+        for (int i = 0; i < size; i++) {
+            int end = isRect ? size : i + 1;
+            for (int j = 0; j < end; j++) {
+                System.out.print(cell);
+            }
+            System.out.println();
+        }
+    }
+
+    /*
     public static void main(String[] args) {
         hokeyGraphics('*', 3, true);
         hokeyGraphics('&', 3, false);
@@ -24,4 +40,5 @@ public class LAB1_Q4_StringUtil {
             }
         }
     }
+     */
 }
