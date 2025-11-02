@@ -2,6 +2,9 @@ package com.shinhan.day07.lab8_2;
 
 public class ShapeTest {
     public static void main(String[] args) {
+
+        //Shape 타입 배열 생성 (다형성 활용)
+        //Rectangle과 RectTriangle을 모두 담을 수 있음
         Shape[] arr = new Shape[2];
         arr[0] = new Rectangle(5, 6);
         arr[1] = new RectTriangle(6, 2);
