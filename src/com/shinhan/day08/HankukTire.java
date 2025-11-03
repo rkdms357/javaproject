@@ -1,6 +1,7 @@
 package com.shinhan.day08;
 
 public class HankukTire implements Tire {
+
     @Override
     public void roll() {
         System.out.println("******************");
