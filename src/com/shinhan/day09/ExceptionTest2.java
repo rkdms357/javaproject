@@ -1,5 +1,7 @@
 package com.shinhan.day09;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.IOException;
 
 /*Exception(예외) : 프로그래머의 노력으로 프로그램이 중지되지 않고 계속 진행하도록 할 수 있음
