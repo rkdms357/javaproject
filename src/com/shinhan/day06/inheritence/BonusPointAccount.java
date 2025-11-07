@@ -1,7 +1,5 @@
 package com.shinhan.day06.inheritence;
 
-import com.shinhan.day07.inter.Account;
-
 public class BonusPointAccount extends Account {
     public int bonusPoint;
 
