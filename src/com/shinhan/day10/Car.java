@@ -18,7 +18,11 @@ public class Car {
     int price;
     String color;
 
-    Car(String model) {}
+    public Car(String color, int price, String model) {
+        this.color = color;
+        this.price = price;
+        this.model = model;
+    }
 
     @Override
     public int hashCode() {
