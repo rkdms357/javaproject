@@ -266,9 +266,9 @@ public class ObjectTest {
         //System.exit(0); //프로그램 종료할때 사용. 0은 정상 종료. -1은 비정상 종료
     }
 
-    private static void f1() {
-        Member m1 = new Member(null, "김", 0);
-        Member m2 = new Member(null, "박");
-        System.out.println(m1);
-    }
+//    private static void f1() {
+//        Member m1 = new Member(null, "김", 0);
+//        Member m2 = new Member(null, "박");
+//        System.out.println(m1);
+//    }
 }
