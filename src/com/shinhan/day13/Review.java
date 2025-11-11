@@ -98,7 +98,7 @@ class Friend implements Comparable<Friend> {
 
 public class Review {
     public static void main(String[] args) {
-        f8();
+        f7();
     }
 
     private static void f10() {
