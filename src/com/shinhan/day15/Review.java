@@ -35,7 +35,7 @@ public class Review {
         int result = totalList.stream() //original stream
                 .filter(pre2)                   //중간처리
                 .mapToInt(mapScore)             //중간처리
-                .peek(null)                     //중간, 루핑(리턴있음)
+                //.peek(null)                   //중간, 루핑(리턴있음)
                 .sum();                         //최종처리
         System.out.println("sum" + result);
     }
